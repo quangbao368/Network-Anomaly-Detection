@@ -35,3 +35,19 @@ Install the required Python libraries using the following command:
 
 ```bash
 pip install -r requirements.txt
+
+**## Usage**
+
+### Step 1: Capture Network Traffic
+Use Wireshark or tcpdump to capture network traffic and save it as a PCAP file.
+
+Example using tcpdump:
+
+```bash
+tcpdump -i eth0 -w network_traffic.pcap
+
+### Step 2: Preprocess the PCAP File
+Use the preprocess_pcap.py script to extract features from the PCAP file.
+
+### Step 3: Train and Evaluate the Model
+Use the train_model.py script to train and evaluate the Isolation Forest model.
